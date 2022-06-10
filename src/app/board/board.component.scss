@@ -1,0 +1,27 @@
+main {
+  display: grid;
+  grid-template-columns: 200px 200px 200px;
+  grid-gap: 0px;
+
+  @media only screen and (max-width: 615px) {
+    grid-template-columns: 100px 100px 100px;
+  }
+}
+
+app-square {
+  border: 1px gray solid;
+  height: 200px;
+
+  @media only screen and (max-width: 615px) {
+    height: 100px;
+  }
+}
+
+.start-btn {
+  border: none;
+  padding: 10px 20px;
+  background-color: #82c2fa;
+  margin-bottom: 1em;
+  border-radius: 10px;
+  font-weight: bold;
+}

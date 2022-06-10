@@ -1,0 +1,8 @@
+<button [ngClass]="{
+  'btn-x': (value === 'X'),
+  'btn-o': (value === 'O'),
+  'btn-square': (!value)
+}" [disabled]="!!winner"
+>
+  {{ value }}
+</button>
